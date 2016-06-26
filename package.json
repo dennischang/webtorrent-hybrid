@@ -12,10 +12,10 @@
     "url": "https://github.com/feross/webtorrent-hybrid/issues"
   },
   "dependencies": {
-    "create-torrent": "^3.23.1",
+    "create-torrent": "^3.24.5",
     "electron-webrtc": "^0.2.1",
     "webtorrent": "0.x",
-    "webtorrent-cli": "^1.0.1"
+    "webtorrent-cli": "^1.2.3"
   },
   "devDependencies": {
     "standard": "^7.0.0"
@@ -36,7 +36,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/feross/webtorrent-hybrid.git"
+    "url": "git://github.com/dennischang/webtorrent-hybrid.git"
   },
   "scripts": {
     "test": "standard"

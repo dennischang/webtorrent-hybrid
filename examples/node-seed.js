@@ -1,13 +1,17 @@
 // var WebTorrent = require('webtorrent-hybrid')
 var WebTorrent = require('../index')
 
-var client = new WebTorrent()
+var daemon = global.WRTC.electronDaemon;
 
-var filePath = './node-seed.js'
+daemon.once('ready', function() {
+  var client = new WebTorrent({ dht: false })
 
-console.log('filePath:', filePath)
+  var filePath = './2015FrozenFever.mp4'
 
-client.seed(filePath, function (torrent) {
-  console.log('torrentId (info hash):', torrent.infoHash)
-  // console.log('torrentId (magnet link):', torrent.magnetURI)
+  console.log('filePath:', filePath)
+
+  client.seed(filePath, function (torrent) {
+    console.log('torrentId (info hash):', torrent.infoHash)
+    console.log('torrentId (magnet link):', torrent.magnetURI)
+  })
 })

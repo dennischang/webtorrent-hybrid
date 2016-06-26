@@ -6,7 +6,7 @@ var daemon = global.WRTC.electronDaemon;
 
 daemon.once('ready', function() {
   var client = new WebTorrent({ dht: false })
-  var torrentId = 'magnet:?xt=urn:btih:6a9759bffd5c0af65319979fb7832189f4f3c35d'
+  var torrentId = 'magnet:?xt=urn:btih:2ce4b0376268a00572a952cd70234a4c0eff4883'
 
   console.log('torrentId:\t', torrentId)
 
